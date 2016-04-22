@@ -1,6 +1,6 @@
 README
 
-- Open terminal and navigate to main project directory "CaffeineFriend"
+- Open terminal and navigate to parent project directory e.g. "CaffeineFriend-master"
 - Run "Pod Setup"
 - Run "Pod Install"
 - Wait for it to finish installing
