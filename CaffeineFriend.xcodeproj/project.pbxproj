@@ -17,6 +17,7 @@
 		726B38461CC8E23D00D0C411 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 726B38441CC8E23D00D0C411 /* LaunchScreen.storyboard */; };
 		726B38511CC8E23E00D0C411 /* CaffeineFriendTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 726B38501CC8E23E00D0C411 /* CaffeineFriendTests.m */; };
 		773A30811F666A17EA1EC62B /* libPods-CaffeineFriend.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C66C1149312C07C5D87E91 /* libPods-CaffeineFriend.a */; };
+		B9D780E3A162FEF444DC5B43 /* libPods-CaffeineFriendTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EBD69002E421D8A6506441B2 /* libPods-CaffeineFriendTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 
 /* Begin PBXFileReference section */
 		15C66C1149312C07C5D87E91 /* libPods-CaffeineFriend.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CaffeineFriend.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CE20A9F1D6D217667819FF8 /* Pods-CaffeineFriendTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaffeineFriendTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CaffeineFriendTests/Pods-CaffeineFriendTests.debug.xcconfig"; sourceTree = "<group>"; };
 		418AE16CD48FDBCF80B53DF4 /* Pods-CaffeineFriend.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaffeineFriend.release.xcconfig"; path = "Pods/Target Support Files/Pods-CaffeineFriend/Pods-CaffeineFriend.release.xcconfig"; sourceTree = "<group>"; };
 		7247EC831CC909BB00F5AF36 /* VenueObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenueObject.h; sourceTree = "<group>"; };
 		7247EC841CC909BB00F5AF36 /* VenueObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenueObject.m; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		726B384C1CC8E23E00D0C411 /* CaffeineFriendTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaffeineFriendTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		726B38501CC8E23E00D0C411 /* CaffeineFriendTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CaffeineFriendTests.m; sourceTree = "<group>"; };
 		726B38521CC8E23E00D0C411 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B66F23172A9AFA007C46A718 /* Pods-CaffeineFriendTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaffeineFriendTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CaffeineFriendTests/Pods-CaffeineFriendTests.release.xcconfig"; sourceTree = "<group>"; };
+		EBD69002E421D8A6506441B2 /* libPods-CaffeineFriendTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CaffeineFriendTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEB8249538B1C5ED8A4A19AB /* Pods-CaffeineFriend.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaffeineFriend.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CaffeineFriend/Pods-CaffeineFriend.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9D780E3A162FEF444DC5B43 /* libPods-CaffeineFriendTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +81,8 @@
 			children = (
 				FEB8249538B1C5ED8A4A19AB /* Pods-CaffeineFriend.debug.xcconfig */,
 				418AE16CD48FDBCF80B53DF4 /* Pods-CaffeineFriend.release.xcconfig */,
+				2CE20A9F1D6D217667819FF8 /* Pods-CaffeineFriendTests.debug.xcconfig */,
+				B66F23172A9AFA007C46A718 /* Pods-CaffeineFriendTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -84,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				15C66C1149312C07C5D87E91 /* libPods-CaffeineFriend.a */,
+				EBD69002E421D8A6506441B2 /* libPods-CaffeineFriendTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -171,9 +179,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 726B38581CC8E23E00D0C411 /* Build configuration list for PBXNativeTarget "CaffeineFriendTests" */;
 			buildPhases = (
+				9434746323EADD90EFEB35BF /* Check Pods Manifest.lock */,
 				726B38481CC8E23E00D0C411 /* Sources */,
 				726B38491CC8E23E00D0C411 /* Frameworks */,
 				726B384A1CC8E23E00D0C411 /* Resources */,
+				5E7E6D9D89B7805DF49931E6 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -244,6 +254,36 @@
 
 /* Begin PBXShellScriptBuildPhase section */
 		108D095041DCFF854BE72F97 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5E7E6D9D89B7805DF49931E6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CaffeineFriendTests/Pods-CaffeineFriendTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9434746323EADD90EFEB35BF /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -468,6 +508,7 @@
 		};
 		726B38591CC8E23E00D0C411 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CE20A9F1D6D217667819FF8 /* Pods-CaffeineFriendTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = CaffeineFriendTests/Info.plist;
@@ -480,6 +521,7 @@
 		};
 		726B385A1CC8E23E00D0C411 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B66F23172A9AFA007C46A718 /* Pods-CaffeineFriendTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = CaffeineFriendTests/Info.plist;

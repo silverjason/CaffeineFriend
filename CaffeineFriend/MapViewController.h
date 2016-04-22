@@ -12,6 +12,9 @@
 
 @interface MapViewController : UIViewController
 
+typedef void(^myCompletion)(BOOL,NSArray*);
+
+- (void) sortVenueDataFor:(NSArray*)venuesArray withBlock:(myCompletion) compblock;
 
 
 

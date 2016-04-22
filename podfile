@@ -7,7 +7,9 @@ pod 'RestKit', '~> 0.24.0'
 pod 'GoogleMaps', '~>1.10.5'
 end
 
+
 target 'CaffeineFriendTests' do
 
+pod 'GoogleMaps', '~>1.10.5'
 end
 

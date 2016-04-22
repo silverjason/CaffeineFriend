@@ -24,6 +24,7 @@
 
 
 
+
 @end
 
 @implementation MapViewController
@@ -115,8 +116,12 @@
                                            parameters:queryParams
                                               success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
                                                   _venues = mappingResult.array;
-                                                  [self processData];
-                                                  [self createCustomMarkers];
+                                                  [self sortVenueDataFor:self.venues withBlock:^(BOOL finished, NSArray *result) {
+                                                      self.venues = result;
+                                                      [self createCustomMarkers];
+
+                                                  }];
+
                                               }
                                               failure:^(RKObjectRequestOperation *operation, NSError *error) {
                                                   NSLog(@"What do you mean by 'there is no coffee?': %@", error);
@@ -124,7 +129,7 @@
 }
 
 
-- (void) processData {
+- (void) sortVenueDataFor:(NSArray*)venuesArray withBlock:(myCompletion) compblock{
     
     
     // Sort in ascending order using distance
@@ -132,17 +137,18 @@
     NSComparisonResult (^sortBlock)(id, id) = ^(id obj1, id obj2) {
         NSNumber * distance1 = [[obj1 valueForKey:@"location"] valueForKey:@"distance"][0];
         NSNumber * distance2 = [[obj2 valueForKey:@"location"] valueForKey:@"distance"][0];
-        if (distance1 > distance2) {
+        if ([distance1 integerValue] > [distance2 integerValue]) {
             return (NSComparisonResult)NSOrderedDescending;
         }
-        if (distance1 < distance2) {
+        if ([distance1 integerValue] < [distance2 integerValue]) {
             return (NSComparisonResult)NSOrderedAscending;
         }
         return (NSComparisonResult)NSOrderedSame;
     };
     
-    self.venues = [self.venues sortedArrayUsingComparator:sortBlock];
     
+    compblock(YES,[venuesArray sortedArrayUsingComparator:sortBlock]);
+
     
     
 }

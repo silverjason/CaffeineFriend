@@ -19,6 +19,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-CaffeineFriendTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>RKValueTransformers.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -52,12 +57,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>68E291FC1F64705132E3A6E596659EB8</key>
+		<key>50373B5761067C5B5E83182DC051190F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>96F1E0CFF616ED0B8E76CC4C13EC639B</key>
+		<key>59659C39546ABFBEB81ABE38EA1AC695</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>68E291FC1F64705132E3A6E596659EB8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -67,12 +77,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C0EB7CF19DA8563E01BFA64C75785B15</key>
+		<key>BB560257774E8D40F4E7DE640280D109</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F4A2542C6CCFCC55F0D2D8956C2E3563</key>
+		<key>CEDD6E82F153B53B3F82B3DBEAB9FC37</key>
 		<dict>
 			<key>primary</key>
 			<true/>
