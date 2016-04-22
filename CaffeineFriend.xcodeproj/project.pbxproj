@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7247EC851CC909BB00F5AF36 /* VenueObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 7247EC841CC909BB00F5AF36 /* VenueObject.m */; };
+		7247EC9A1CCA175D00F5AF36 /* ListViewControllerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7247EC991CCA175D00F5AF36 /* ListViewControllerTableViewController.m */; };
+		726B38381CC8E23D00D0C411 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 726B38371CC8E23D00D0C411 /* main.m */; };
+		726B383B1CC8E23D00D0C411 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 726B383A1CC8E23D00D0C411 /* AppDelegate.m */; };
+		726B383E1CC8E23D00D0C411 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726B383D1CC8E23D00D0C411 /* ViewController.m */; };
+		726B38411CC8E23D00D0C411 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 726B383F1CC8E23D00D0C411 /* Main.storyboard */; };
+		726B38431CC8E23D00D0C411 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 726B38421CC8E23D00D0C411 /* Assets.xcassets */; };
+		726B38461CC8E23D00D0C411 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 726B38441CC8E23D00D0C411 /* LaunchScreen.storyboard */; };
+		726B38511CC8E23E00D0C411 /* CaffeineFriendTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 726B38501CC8E23E00D0C411 /* CaffeineFriendTests.m */; };
+		773A30811F666A17EA1EC62B /* libPods-CaffeineFriend.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C66C1149312C07C5D87E91 /* libPods-CaffeineFriend.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		726B384D1CC8E23E00D0C411 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 726B382B1CC8E23D00D0C411 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 726B38321CC8E23D00D0C411;
+			remoteInfo = CaffeineFriend;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		15C66C1149312C07C5D87E91 /* libPods-CaffeineFriend.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CaffeineFriend.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		418AE16CD48FDBCF80B53DF4 /* Pods-CaffeineFriend.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaffeineFriend.release.xcconfig"; path = "Pods/Target Support Files/Pods-CaffeineFriend/Pods-CaffeineFriend.release.xcconfig"; sourceTree = "<group>"; };
+		7247EC831CC909BB00F5AF36 /* VenueObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenueObject.h; sourceTree = "<group>"; };
+		7247EC841CC909BB00F5AF36 /* VenueObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenueObject.m; sourceTree = "<group>"; };
+		7247EC981CCA175D00F5AF36 /* ListViewControllerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewControllerTableViewController.h; sourceTree = "<group>"; };
+		7247EC991CCA175D00F5AF36 /* ListViewControllerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewControllerTableViewController.m; sourceTree = "<group>"; };
+		726B38331CC8E23D00D0C411 /* CaffeineFriend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaffeineFriend.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		726B38371CC8E23D00D0C411 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		726B38391CC8E23D00D0C411 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		726B383A1CC8E23D00D0C411 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		726B383C1CC8E23D00D0C411 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		726B383D1CC8E23D00D0C411 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		726B38401CC8E23D00D0C411 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		726B38421CC8E23D00D0C411 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		726B38451CC8E23D00D0C411 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		726B38471CC8E23D00D0C411 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		726B384C1CC8E23E00D0C411 /* CaffeineFriendTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaffeineFriendTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		726B38501CC8E23E00D0C411 /* CaffeineFriendTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CaffeineFriendTests.m; sourceTree = "<group>"; };
+		726B38521CC8E23E00D0C411 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEB8249538B1C5ED8A4A19AB /* Pods-CaffeineFriend.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaffeineFriend.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CaffeineFriend/Pods-CaffeineFriend.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		726B38301CC8E23D00D0C411 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				773A30811F666A17EA1EC62B /* libPods-CaffeineFriend.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		726B38491CC8E23E00D0C411 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4E4FD889D7834C42618F0ABA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FEB8249538B1C5ED8A4A19AB /* Pods-CaffeineFriend.debug.xcconfig */,
+				418AE16CD48FDBCF80B53DF4 /* Pods-CaffeineFriend.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		557C54321F1906A5F1AE8994 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				15C66C1149312C07C5D87E91 /* libPods-CaffeineFriend.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		726B382A1CC8E23D00D0C411 = {
+			isa = PBXGroup;
+			children = (
+				726B38351CC8E23D00D0C411 /* CaffeineFriend */,
+				726B384F1CC8E23E00D0C411 /* CaffeineFriendTests */,
+				726B38341CC8E23D00D0C411 /* Products */,
+				4E4FD889D7834C42618F0ABA /* Pods */,
+				557C54321F1906A5F1AE8994 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		726B38341CC8E23D00D0C411 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				726B38331CC8E23D00D0C411 /* CaffeineFriend.app */,
+				726B384C1CC8E23E00D0C411 /* CaffeineFriendTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		726B38351CC8E23D00D0C411 /* CaffeineFriend */ = {
+			isa = PBXGroup;
+			children = (
+				726B38391CC8E23D00D0C411 /* AppDelegate.h */,
+				726B383A1CC8E23D00D0C411 /* AppDelegate.m */,
+				726B383C1CC8E23D00D0C411 /* ViewController.h */,
+				726B383D1CC8E23D00D0C411 /* ViewController.m */,
+				7247EC981CCA175D00F5AF36 /* ListViewControllerTableViewController.h */,
+				7247EC991CCA175D00F5AF36 /* ListViewControllerTableViewController.m */,
+				726B383F1CC8E23D00D0C411 /* Main.storyboard */,
+				726B38421CC8E23D00D0C411 /* Assets.xcassets */,
+				726B38441CC8E23D00D0C411 /* LaunchScreen.storyboard */,
+				726B38471CC8E23D00D0C411 /* Info.plist */,
+				726B38361CC8E23D00D0C411 /* Supporting Files */,
+				7247EC831CC909BB00F5AF36 /* VenueObject.h */,
+				7247EC841CC909BB00F5AF36 /* VenueObject.m */,
+			);
+			path = CaffeineFriend;
+			sourceTree = "<group>";
+		};
+		726B38361CC8E23D00D0C411 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				726B38371CC8E23D00D0C411 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		726B384F1CC8E23E00D0C411 /* CaffeineFriendTests */ = {
+			isa = PBXGroup;
+			children = (
+				726B38501CC8E23E00D0C411 /* CaffeineFriendTests.m */,
+				726B38521CC8E23E00D0C411 /* Info.plist */,
+			);
+			path = CaffeineFriendTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		726B38321CC8E23D00D0C411 /* CaffeineFriend */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 726B38551CC8E23E00D0C411 /* Build configuration list for PBXNativeTarget "CaffeineFriend" */;
+			buildPhases = (
+				108D095041DCFF854BE72F97 /* Check Pods Manifest.lock */,
+				726B382F1CC8E23D00D0C411 /* Sources */,
+				726B38301CC8E23D00D0C411 /* Frameworks */,
+				726B38311CC8E23D00D0C411 /* Resources */,
+				CA3C4196EC0B65A8144719BC /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CaffeineFriend;
+			productName = CaffeineFriend;
+			productReference = 726B38331CC8E23D00D0C411 /* CaffeineFriend.app */;
+			productType = "com.apple.product-type.application";
+		};
+		726B384B1CC8E23E00D0C411 /* CaffeineFriendTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 726B38581CC8E23E00D0C411 /* Build configuration list for PBXNativeTarget "CaffeineFriendTests" */;
+			buildPhases = (
+				726B38481CC8E23E00D0C411 /* Sources */,
+				726B38491CC8E23E00D0C411 /* Frameworks */,
+				726B384A1CC8E23E00D0C411 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				726B384E1CC8E23E00D0C411 /* PBXTargetDependency */,
+			);
+			name = CaffeineFriendTests;
+			productName = CaffeineFriendTests;
+			productReference = 726B384C1CC8E23E00D0C411 /* CaffeineFriendTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		726B382B1CC8E23D00D0C411 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Jason Silver";
+				TargetAttributes = {
+					726B38321CC8E23D00D0C411 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					726B384B1CC8E23E00D0C411 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 726B38321CC8E23D00D0C411;
+					};
+				};
+			};
+			buildConfigurationList = 726B382E1CC8E23D00D0C411 /* Build configuration list for PBXProject "CaffeineFriend" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 726B382A1CC8E23D00D0C411;
+			productRefGroup = 726B38341CC8E23D00D0C411 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				726B38321CC8E23D00D0C411 /* CaffeineFriend */,
+				726B384B1CC8E23E00D0C411 /* CaffeineFriendTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		726B38311CC8E23D00D0C411 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				726B38461CC8E23D00D0C411 /* LaunchScreen.storyboard in Resources */,
+				726B38431CC8E23D00D0C411 /* Assets.xcassets in Resources */,
+				726B38411CC8E23D00D0C411 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		726B384A1CC8E23E00D0C411 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		108D095041DCFF854BE72F97 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CA3C4196EC0B65A8144719BC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CaffeineFriend/Pods-CaffeineFriend-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		726B382F1CC8E23D00D0C411 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				726B383E1CC8E23D00D0C411 /* ViewController.m in Sources */,
+				7247EC9A1CCA175D00F5AF36 /* ListViewControllerTableViewController.m in Sources */,
+				726B383B1CC8E23D00D0C411 /* AppDelegate.m in Sources */,
+				7247EC851CC909BB00F5AF36 /* VenueObject.m in Sources */,
+				726B38381CC8E23D00D0C411 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		726B38481CC8E23E00D0C411 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				726B38511CC8E23E00D0C411 /* CaffeineFriendTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		726B384E1CC8E23E00D0C411 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 726B38321CC8E23D00D0C411 /* CaffeineFriend */;
+			targetProxy = 726B384D1CC8E23E00D0C411 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		726B383F1CC8E23D00D0C411 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				726B38401CC8E23D00D0C411 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		726B38441CC8E23D00D0C411 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				726B38451CC8E23D00D0C411 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		726B38531CC8E23E00D0C411 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		726B38541CC8E23E00D0C411 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		726B38561CC8E23E00D0C411 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEB8249538B1C5ED8A4A19AB /* Pods-CaffeineFriend.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleMaps\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleMaps/GoogleMaps\"",
+					"\"${PODS_ROOT}/Headers/Public/ISO8601DateFormatterValueTransformer\"",
+					"\"${PODS_ROOT}/Headers/Public/RKValueTransformers\"",
+					"\"${PODS_ROOT}/Headers/Public/RestKit\"",
+					"\"${PODS_ROOT}/Headers/Public/RestKit/CoreData\"",
+					"\"${PODS_ROOT}/Headers/Public/RestKit/Network\"",
+					"\"${PODS_ROOT}/Headers/Public/RestKit/ObjectMapping\"",
+					"\"${PODS_ROOT}/Headers/Public/RestKit/Support\"",
+					"\"${PODS_ROOT}/Headers/Public/SOCKit\"",
+					"\"${PODS_ROOT}/Headers/Public/TransitionKit\"",
+				);
+				INFOPLIST_FILE = CaffeineFriend/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jason-Silver.CaffeineFriend";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		726B38571CC8E23E00D0C411 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 418AE16CD48FDBCF80B53DF4 /* Pods-CaffeineFriend.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleMaps\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleMaps/GoogleMaps\"",
+					"\"${PODS_ROOT}/Headers/Public/ISO8601DateFormatterValueTransformer\"",
+					"\"${PODS_ROOT}/Headers/Public/RKValueTransformers\"",
+					"\"${PODS_ROOT}/Headers/Public/RestKit\"",
+					"\"${PODS_ROOT}/Headers/Public/RestKit/CoreData\"",
+					"\"${PODS_ROOT}/Headers/Public/RestKit/Network\"",
+					"\"${PODS_ROOT}/Headers/Public/RestKit/ObjectMapping\"",
+					"\"${PODS_ROOT}/Headers/Public/RestKit/Support\"",
+					"\"${PODS_ROOT}/Headers/Public/SOCKit\"",
+					"\"${PODS_ROOT}/Headers/Public/TransitionKit\"",
+				);
+				INFOPLIST_FILE = CaffeineFriend/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jason-Silver.CaffeineFriend";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		726B38591CC8E23E00D0C411 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CaffeineFriendTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jason-Silver.CaffeineFriendTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CaffeineFriend.app/CaffeineFriend";
+			};
+			name = Debug;
+		};
+		726B385A1CC8E23E00D0C411 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CaffeineFriendTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jason-Silver.CaffeineFriendTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CaffeineFriend.app/CaffeineFriend";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		726B382E1CC8E23D00D0C411 /* Build configuration list for PBXProject "CaffeineFriend" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				726B38531CC8E23E00D0C411 /* Debug */,
+				726B38541CC8E23E00D0C411 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		726B38551CC8E23E00D0C411 /* Build configuration list for PBXNativeTarget "CaffeineFriend" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				726B38561CC8E23E00D0C411 /* Debug */,
+				726B38571CC8E23E00D0C411 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		726B38581CC8E23E00D0C411 /* Build configuration list for PBXNativeTarget "CaffeineFriendTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				726B38591CC8E23E00D0C411 /* Debug */,
+				726B385A1CC8E23E00D0C411 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 726B382B1CC8E23D00D0C411 /* Project object */;
+}

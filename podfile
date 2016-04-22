@@ -1,0 +1,13 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '8.0'
+
+target 'CaffeineFriend' do
+
+pod 'RestKit', '~> 0.24.0'
+pod 'GoogleMaps', '~>1.10.5'
+end
+
+target 'CaffeineFriendTests' do
+
+end
+
