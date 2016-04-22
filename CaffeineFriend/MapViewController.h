@@ -10,7 +10,7 @@
 #import <UIKit/UIKit.h>
 @import GoogleMaps;
 
-@interface ViewController : UIViewController
+@interface MapViewController : UIViewController
 
 
 

@@ -6,7 +6,7 @@
 //  Copyright © 2016 Jason Silver. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "MapViewController.h"
 #import <RestKit/RestKit.h>
 #import "ListViewControllerTableViewController.h"
 #import "VenueObject.h"
@@ -14,11 +14,10 @@
 @import CoreLocation;
 
 
-@interface ViewController() <CLLocationManagerDelegate> {
+@interface MapViewController() <CLLocationManagerDelegate> {
 
 }
 @property (retain, nonatomic) IBOutlet GMSMapView *mapView;
-@property (assign, nonatomic) BOOL firstLocationUpdate;
 @property(nonatomic,retain) CLLocationManager *locationManager;
 @property (nonatomic, strong) NSArray *venues;
 
@@ -27,7 +26,7 @@
 
 @end
 
-@implementation ViewController
+@implementation MapViewController
 
 
 - (void)viewDidLoad {
@@ -42,7 +41,6 @@
     self.locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters; // 100 m
     self.locationManager.delegate = self;
     [self.locationManager startUpdatingLocation];
-
 
     self.mapView.settings.myLocationButton = YES;
     self.mapView.settings.compassButton= YES;
@@ -69,7 +67,7 @@
     NSURL *baseURL = [NSURL URLWithString:@"https://api.foursquare.com"];
     AFHTTPClient *client = [[AFHTTPClient alloc] initWithBaseURL:baseURL];
     
-    // initialize RestKit
+    // initialize RestKit with client
     RKObjectManager *objectManager = [[RKObjectManager alloc] initWithHTTPClient:client];
     
     // setup object mappings
@@ -79,6 +77,7 @@
 
     
     // register mappings with the provider using a response descriptor
+    // use search endpoint
     RKResponseDescriptor *responseDescriptor =
     [RKResponseDescriptor responseDescriptorWithMapping:venueMapping
                                                  method:RKRequestMethodGET
@@ -94,13 +93,16 @@
     NSString *latLon = latitude;
     latLon = [latLon stringByAppendingString:@","];
     latLon = [latLon stringByAppendingString:longitude];
-
     
+    
+    //Foursqaure credentials
     NSString *clientID = @"KY0RFH3HKB4GC5WBVKOQWHUWAHHILIMWHQT32HGQETGZY2AX";
     NSString *clientSecret = @"3QPQ0HQ5WBEIKTS51APAWD0I51205JXG5I40QRAGZTQAUBUP";
     
     
     // 4 KM Radius
+    // Use coffee category ID
+    // Limit to 100 results
     NSDictionary *queryParams = @{@"ll" : latLon,
                                   @"client_id" : clientID,
                                   @"client_secret" : clientSecret,
@@ -178,22 +180,22 @@
 }
 
 
+/* Delegate method fired when current location is changed */
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
 {
     CLLocation *location = [locations lastObject];
 
-    
         NSString * latitude = [NSString stringWithFormat:@"%.20f", location.coordinate.latitude];
         NSString * longitude = [NSString stringWithFormat:@"%.20f", location.coordinate.longitude];
+    
+        // Load venues for updated location
         [self loadVenuesUsingLatitude:latitude longitude:longitude];
+    
+        // Adjust camera to current location
         self.mapView.camera = [GMSCameraPosition cameraWithTarget:location.coordinate
                                                              zoom:14];
     
-    
-    
-    
-    NSLog(@"lat%f - lon%f", location.coordinate.latitude, location.coordinate.longitude);
 }
 
 
