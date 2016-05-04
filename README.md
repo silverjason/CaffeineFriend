@@ -1,5 +1,7 @@
 README
 
+Objective C app that finds surrounding cafes based on current location
+
 - Open terminal and navigate to parent project directory e.g. "CaffeineFriend-master"
 - Run "Pod Setup"
 - Run "Pod Install"
